@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собери своего персонажа</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+
+    <div class="achives">
+        <div class="achive__one achive" data-id="1">1</div>
+        <div class="achive__two achive"  data-id="2">2</div>
+        <div class="achive__three achive"  data-id="3">3</div>
+        <div class="achive__four achive"  data-id="4">4</div>
+        <div class="achive__three achive"  data-id="5">5</div>
+    </div>
+
+    <div class="achive__overlay">
+    </div>
+    
+    <div class="body__press-name press-name container">
+        <div class="press-name__left">
+                <img src="img/no_image.jpg" alt="">
+            </div>
+            <div class="press-name__right">
+            <h2 class="press-name__title title">Введите имя:</h2>
+            <form action="#" class="press-name__form form" name="main" id="form">
+                <label>
+                    <input type="text" class="form__input" name="name">
+                </label>
+                <label>
+                    <input type="file" class="form__file" accept=".png, .jpg, .jpeg" name="file">
+                </label>
+                <button class="form__btn button" type="submit">Нажать</button>
+            </form>
+        </div>
+    </div>
+    
+    <section class="first-block">
+        <div class="container">
+            <div class="first-block__wrapper wrapper">
+                <div class="first-block__left">
+                    <img src="img/no_image.jpg" alt="">
+                </div>
+                <h2 class="first-block__title title">
+                    Имя вашего персонажа: <span></span>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-block">
+        <div class="container">
+            <div class="second-block__wrapper wrapper">
+                <div class="second-block__sort">
+                    <select name="change" id="change" class="second-block__sort-el">
+                        <option value="0">Сортирование</option>
+                        <option value="1">Сортировать по убыванию</option>
+                        <option value="2">Сортировать по возрастанию</option>
+                    </select>    
+                </div>
+                <h2 class="second-block__title title">
+                    Выберите стиль:
+                </h2>
+                <div class="block__clothes">
+                <ul class="second-block__list style">
+                    <li class="style__el" data-plase="0">Армейский</li>
+                    <li class="style__el" data-plase="1">Болдинский</li>
+                    <li class="style__el" data-plase="3">Московский</li>
+                    <div class="second-block__sort-from-type">
+                        <label for="shoes" class="second-block__label">
+                            Обувь<input type="radio" name="clothes" id="shoes">
+                        </label>
+                        <label for="trousers" class="second-block__label">
+                            Брюки<input type="radio" name="clothes" id="trousers">
+                        </label>
+                        <label for="jacket" class="second-block__label">
+                            Куртка<input type="radio" name="clothes" id="jacket">
+                        </label>
+                        <label for="all" class="second-block__label">
+                            Все<input type="radio" name="clothes" id="all">
+                        </label>
+                    </div>
+                </ul>
+                
+                <div class="second-block__elements">
+                
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="three-block">
+        <div class="container">
+            <div class="three-block__wrapper wrapper">
+                <div class="three-block__left">
+                    <h2 class="three-block__title title">Ваш персонаж:
+                    </h2>
+                    <h2 class="three-block__title-sum title">Cумма:
+                        <span>0</span>
+                    </h2>
+                    <div class="three-block__button button">Удалить</div>
+                </div>
+                <div class="three-block__right">
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="four-block">
+        <div class="container">
+            <div class="four-block__wrapper wrapper">
+                <div class="four-block__block">
+                    <div class="four-block__img">
+                        <img src="img/car1.png" alt="" data-id="1">
+                    </div>
+                    <div class="four-block__img">
+                        <img src="img/car2.png" alt="" data-id="2">
+                    </div>
+                    <div class="four-block__img" >
+                        <img src="img/car3.png" alt="" data-id="3">
+                    </div>
+                    <div class="four-block__img"  >
+                        <img src="img/car4.png" alt="" data-id="4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="js/closest.js"></script>
+<script src="js/index.js"></script>
+</html>
